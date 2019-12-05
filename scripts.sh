@@ -1,7 +1,7 @@
 alias npmrc='less ~/.npmrc'
 alias editHistory="(cd ~ && code .zsh_history && sed -i '' -e '$ d' .zsh_history)"
 
-hashBearer () {
+hashBearer() {
   echo -n 'Bearer '$1 | md5
 }
 
@@ -32,4 +32,8 @@ space() {
   else
     (echo $1 | sed 's/./& /g' | pbcopy)
   fi
+}
+
+editZsh() {
+  code ~/.zshrc
 }
