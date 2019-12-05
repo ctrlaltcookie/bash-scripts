@@ -1,5 +1,6 @@
 alias npmrc='less ~/.npmrc'
 alias editHistory="(cd ~ && code .zsh_history && sed -i '' -e '$ d' .zsh_history)"
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 hashBearer() {
   echo -n 'Bearer '$1 | md5
