@@ -3,6 +3,8 @@ alias editHistory="(cd ~ && code .zsh_history && sed -i '' -e '$ d' .zsh_history
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias stopAllDockers="docker stop $(docker ps -aq)"
 alias gum='git checkout master && git pull --prune'
+alias editNpmrc='code ~/.npmrc'
+alias audit='npm audit --registry https://registry.npmjs.com/'
 
 hashBearer() {
   echo -n 'Bearer '$1 | md5
